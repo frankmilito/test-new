@@ -1,10 +1,10 @@
 import CardLayout from "@components/card/Card";
 import Wrapper from "@components/wrapper";
-import CompanyDetails from "@/app/components/onboardingSteps/CompanyDetails";
+import CompanyDetails from "@/app/components/onboardingSteps/companyDetails";
 import { useEffect, useState } from "react";
-import Feedback from "@/app/components/onboardingSteps/Feedback";
+import Feedback from "@/app/components/onboardingSteps/feedback";
 import { useSearchParams } from "react-router-dom";
-import CustomStepper from "@/app/components/onboardingSteps/CustomSteps";
+import CustomStepper from "@/app/components/onboardingSteps/customSteps";
 import { motion } from "framer-motion";
 
 const UserOnboarding = () => {

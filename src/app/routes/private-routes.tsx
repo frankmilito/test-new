@@ -1,4 +1,4 @@
-import { ProtectedRoute } from "../components/protectedRoute";
+import { ProtectedRoute } from "../components/Protected-route";
 import Dashboard from "../pages/dashboard";
 import Survey from "../pages/survey";
 import SurveyDetails from "../pages/survey/SurveyDetails";

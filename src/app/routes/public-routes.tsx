@@ -1,4 +1,4 @@
-import { AuthRoute } from "../components/protectedRoute";
+import { AuthRoute } from "../components/Protected-route";
 
 import { Navigate } from "react-router-dom";
 import { Layout } from "./Layout";
