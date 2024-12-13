@@ -1,7 +1,5 @@
 import { RouterProvider } from "react-router-dom";
-import { useEffect } from "react";
 import { useAppDispatch } from "@/store";
-import { appActions } from "./app/data/app/slice";
 import { router } from "./app/routes";
 
 function App() {
