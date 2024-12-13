@@ -1,7 +1,14 @@
 {
-  "name": "feedback-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "feedback-ui-new-1",
+  "main": "./dist/safiyo-sdk.umd.js",
+  "module": "./dist/safiyo-sdk.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-library-scaffold.es.js",
+      "require": "./dist/react-library-scaffold.umd.js"
+    }
+  },
+  "version": "1.1.9",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -38,6 +45,7 @@
     "redux-injectors": "2.1.0",
     "redux-persist": "^6.0.0",
     "redux-saga": "1.3.0",
+    "vite-plugin-dts": "^4.3.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
