@@ -2,19 +2,33 @@
   "name": "feedback-ui-new-1",
   "main": "./dist/safiyo-sdk.umd.js",
   "module": "./dist/safiyo-sdk.es.js",
+  "types": "./dist/safiyo-sdk.es.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/react-library-scaffold.es.js",
-      "require": "./dist/react-library-scaffold.umd.js"
-    }
+      "import": "./dist/safiyo-sdk.es.js",
+      "require": "./dist/safiyo-sdk.umd.js",
+      "default": "./dist/safiyo-sdk.es.js"
+    },
+    "./types": "./dist/safiyo-sdk.es.d.ts"
   },
-  "version": "1.1.9",
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.2.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublish": "rm -rf ./dist && npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
