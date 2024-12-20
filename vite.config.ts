@@ -4,7 +4,12 @@ import path from "path";
 import dts from "vite-plugin-dts";
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), dts()],
+  plugins: [
+    react(),
+    // dts({
+    //   insertTypesEntry: true, // Generates a `package.json` entry for types
+    // }),
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -13,10 +18,10 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: "src/main.tsx",
-      name: "safiyo-sdk",
+      entry: "src/index.ts",
+      name: "SafiyoSDK",
       fileName: (format) => `safiyo-sdk.${format}.js`,
-      formats: ["es", "cjs", "umd"],
+      formats: ["es", "umd"],
     },
     rollupOptions: {
       external: ["react", "react-dom"],
